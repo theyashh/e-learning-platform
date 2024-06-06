@@ -1,0 +1,117 @@
+.quizzes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .quiz-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .quiz-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .quiz-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .quiz-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding: 0 10px;
+    text-align: center;
+  }
+  
+  .quiz-description {
+    font-size: 1em;
+    padding: 0 10px;
+    text-align: center;
+    color: #555;
+  }
+  
+  .quiz-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px auto;
+    display: block;
+  }
+  
+  .quiz-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .quiz-questions {
+    padding: 10px 20px;
+  }
+  
+  .quiz-question {
+    margin-bottom: 15px;
+  }
+  
+  .quiz-question p {
+    margin-bottom: 5px;
+  }
+  
+  .quiz-question label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .quiz-submit-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px auto;
+    display: block;
+  }
+  
+  .quiz-submit-btn:hover {
+    background-color: #218838;
+  }
+  
+  .quiz-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .quiz-popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .quiz-popup-content h2 {
+    margin-bottom: 10px;
+  }
+  
+  .quiz-popup-content p {
+    margin-bottom: 20px;
+  }
+  

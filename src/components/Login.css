@@ -1,0 +1,126 @@
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+    font-family: 'Arial, sans-serif';
+    overflow: auto;
+    height: 100vh;
+  }
+  
+  /* Hide scrollbar for all browsers */
+  .home-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .home-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+  
+  .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav ul li {
+    margin-right: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav ul li:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .content {
+    padding: 20px 0;
+  }
+  
+  .features, .get-app {
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .features ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .features li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .features img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+  
+  .features h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .features p {
+    color: #666;
+  }
+  
+  .get-app .app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .get-app .app-buttons button {
+    padding: 15px 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .get-app .app-buttons .ios {
+    background-color: #0070c9;
+    color: white;
+  }
+  
+  .get-app .app-buttons .android {
+    background-color: #34a853;
+    color: white;
+  }
+  
+  .get-app .app-buttons button:hover {
+    opacity: 0.8;
+  }
+  
